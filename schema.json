@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "ModuleTitle": {
+      "type": "string",
+      "title": "Module Title"
+    },
+    "Panels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "title": "Title",
+            "required": true
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "Icon": {
+            "type": "string",
+            "title": "Icon"
+          }
+        }
+      }
+    }
+  }
+}

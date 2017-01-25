@@ -1,0 +1,19 @@
+<div class="panel-group" id="accordion{{Context.ModuleId}}" role="tablist" aria-multiselectable="true">
+    {{#each Panels}}
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading{{../Context.ModuleId}}{{@index}}">          
+          	<h4 class="panel-title">
+                <a  data-toggle="collapse" data-parent="#accordion{{../Context.ModuleId}}" href="#collapse{{../Context.ModuleId}}{{@index}}" aria-expanded="true" aria-controls="collapse{{../Context.ModuleId}}{{@index}}">                 
+                  <i class="{{../Settings.IconSize}} {{Icon}} pane-icon" style="color:{{../Settings.IconColor}}"></i>
+                  <span class="pane-title">{{Title}}</span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapse{{../Context.ModuleId}}{{@index}}" class="panel-collapse collapse {{#if @first}}in{{/if}}" role="tabpanel" aria-labelledby="heading{{../Context.ModuleId}}{{@index}}">
+            <div class="panel-body">
+                {{Description}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

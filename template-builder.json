@@ -1,0 +1,46 @@
+{
+  "formfields": [
+    {
+      "fieldname": "IconColor",
+      "title": "Icon Color",
+      "fieldtype": "text",
+      "advanced": true,
+      "required": false,
+      "hidden": false,
+      "helper": "Enter the HTML color code (e.g. #C0C0C0)",
+      "multilanguage": false,
+      "dependencies": []
+    },
+    {
+      "fieldname": "IconSize",
+      "title": "Icon Size",
+      "fieldtype": "radio",
+      "vertical": false,
+      "fieldoptions": [
+        {
+          "value": "fa-1x",
+          "text": "1"
+        },
+        {
+          "value": "fa-2x",
+          "text": "2"
+        },
+        {
+          "value": "fa-3x",
+          "text": "3"
+        },
+        {
+          "value": "fa-4x",
+          "text": "4"
+        }
+      ],
+      "advanced": true,
+      "required": true,
+      "hidden": false,
+      "default": "2",
+      "helper": "Enter 1, 2, 3, or 4",
+      "dependencies": []
+    }
+  ],
+  "formtype": "object"
+}

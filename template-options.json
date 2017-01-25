@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "IconColor": {
+      "type": "text",
+      "helper": "Enter the HTML color code (e.g. #C0C0C0)"
+    },
+    "IconSize": {
+      "type": "radio",
+      "optionLabels": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "vertical": false,
+      "helper": "Enter 1, 2, 3, or 4"
+    }
+  }
+}

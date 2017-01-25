@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "IconColor": {
+      "type": "string",
+      "title": "Icon Color"
+    },
+    "IconSize": {
+      "type": "string",
+      "title": "Icon Size",
+      "enum": [
+        "fa-1x",
+        "fa-2x",
+        "fa-3x",
+        "fa-4x"
+      ],
+      "default": "2",
+      "required": true
+    }
+  }
+}
